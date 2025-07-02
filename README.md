@@ -1,4 +1,4 @@
-# 🧠 KernelGhost's Terminal Dotfiles
+# 🧠 KernelGhost's Terminal Dotfiles (empty repo for now)
 
 Minimal dotfiles setup for terminal environments across **GNOME-based Arch/Ubuntu/Debian systems**.
 
