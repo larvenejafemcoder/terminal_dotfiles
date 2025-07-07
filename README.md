@@ -1,4 +1,5 @@
 # 🧠 KernelGhost's Terminal Dotfiles (empty repo for now)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Minimal dotfiles setup for terminal environments across **GNOME-based Arch/Ubuntu/Debian systems**.
 
@@ -53,12 +54,16 @@ sudo apt install zsh curl alacritty dconf-cli
 
 ```
 terminal_dotfiles/
-├── alacritty/              # Alacritty config (alacritty.yml)
-├── gnome-terminal/         # GNOME Terminal settings (dconf export)
-├── zsh/                    # Zsh config and aliases
-├── install.sh              # Setup script
-├── README.md
-└── LICENSE
+├── alacritty/
+│   └── alacritty.yml             # Alacritty config (alacritty.yml)
+├── gnome-terminal/
+│   └── gnome-terminal.dconfig    # GNOME Terminal settings (dconf export)
+├── zsh/
+│   ├── .zshrc                   # Zsh config
+│   └── aliases.zsh              # Pre-made aliases for zsh shell
+├── install.sh                   # Installation script here mostly
+├── README.md                    # what you need to know about this script
+└── LICENSE                      # Licensing regarding GNU/MIT regulations of FOSS
 ```
 
 ---
@@ -69,12 +74,12 @@ terminal_dotfiles/
 # Clone (first time)
 git clone https://github.com/larvenejafemcoder/terminal_dotfiles.git
 
-# Push changes
+# Push changes (for contribution purposes, if you dont want to then just dont do this)
 git add .
 git commit -m "Update: yoooo zsh tweaks"
 git push
 
-# Pull latest changes
+# Pull latest changes (pull the latest update on my zsh dotfile templates)
 git pull
 
 # Check for updates
@@ -108,6 +113,7 @@ Maintained by [@larvenejafemcoder](https://github.com/larvenejafemcoder)
 ### 📜 License
 
 MIT – do whatever, just don’t sell it without credit 😤
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ```
 
