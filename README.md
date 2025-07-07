@@ -19,15 +19,23 @@ Minimal dotfiles setup for terminal environments across **GNOME-based Arch/Ubunt
 ### 🚀 Quick Install
 
 ```bash
-# Clone the dotfiles
-git clone https://github.com/larvenejafemcoder/terminal_dotfiles.git ~/dotfiles
-cd ~/dotfiles
 
+# Clone the dotfiles
+git clone https://github.com/larvenejafemcoder/terminal_dotfiles.git
+
+```
+
+```
+cd ~/dotfiles
+```
+
+```
 # Make installer executable
 chmod +x install.sh
 
 # Run the installer
 ./install.sh
+
 ````
 
 ---
