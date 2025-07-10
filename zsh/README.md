@@ -59,6 +59,34 @@ cd ~/dotfiles/zsh/powerlevel10k
 └── install.sh          # Optional full setup script
 ```
 
+
+---
+
+### 🖋️ Font Requirements (or your shell will look jank 💀)
+
+> For everything to look clean, iconic, and aligned properly, **Nerd Fonts are essential**.
+
+Recommended fonts (install **all** if you're indecisive like me):
+
+```bash
+# JetBrains Mono Nerd Font
+yay -S nerd-fonts-jetbrains-mono
+
+# FiraCode Nerd Font
+yay -S nerd-fonts-fira-code
+
+# Meslo LG M Nerd Font (Powerlevel10k recommends this)
+yay -S nerd-fonts-meslo-lg
+
+# (Optional) Hack Nerd Font, SourceCodePro, etc
+yay -Ss nerd-fonts | less
+```
+
+Make sure to:
+
+* Set your **terminal font** to one of the above in your terminal emulator settings (Kitty, Alacritty, GNOME Terminal, etc.)
+* For best compatibility with Powerlevel10k, use **MesloLGS NF**.
+
 ---
 
 Let me know if you want to:
