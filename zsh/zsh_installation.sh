@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+set -x  # <-- this enables printing every command before execution
 
 echo "== krnl_terminal setup started =="
 
