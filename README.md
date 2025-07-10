@@ -62,16 +62,20 @@ sudo apt install zsh curl alacritty dconf-cli
 
 ```
 terminal_dotfiles/
+
 ├── alacritty/
-│   └── alacritty.yml             # Alacritty config (alacritty.yml)
+│   └── alacritty.yml               # Alacritty terminal config
 ├── gnome-terminal/
-│   └── gnome-terminal.dconfig    # GNOME Terminal settings (dconf export)
+│   └── gnome-terminal.dconfig     # GNOME Terminal dconf export config
 ├── zsh/
-│   ├── .zshrc                   # Zsh config
-│   └── aliases.zsh              # Pre-made aliases for zsh shell
-├── install.sh                   # Installation script here mostly
-├── README.md                    # what you need to know about this script
-└── LICENSE                      # Licensing regarding GNU/MIT regulations of FOSS
+│   ├── .zshrc                     # Main Zsh config file
+│   └── aliases.zsh                # Zsh aliases
+├── fonts/                         # Fonts folder somewhere here (not inside zsh/)
+│   └── ...                       # Your font install scripts and font files
+├── install.sh                     # Main install/setup script
+├── README.md                     # Info about usage and setup
+└── LICENSE                       # Licensing info (GNU/MIT)
+
 ```
 
 ---
