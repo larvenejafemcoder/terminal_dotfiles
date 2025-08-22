@@ -1,51 +1,86 @@
-# Nerd Fonts
+# Nerd Fonts – Meslo LG
 
-This is an archived font from the Nerd Fonts release v3.4.0.
+Hey there, fellow font nerd 👀
+This folder contains an archived patched version of **Meslo LG Nerd Font** (v1.21), ready for terminal awesomeness (not by me ofc)
 
-For more information see:
-* https://github.com/ryanoasis/nerd-fonts/
-* https://github.com/ryanoasis/nerd-fonts/releases/latest/
+---
 
-# Meslo LG
+## About Nerd Fonts 
 
-Meslo LG is a customized version of Apple’s Menlo-Regular font
-(which is a customized Bitstream Vera Sans Mono).
+Nerd Fonts patches developer-friendly monospace fonts with **icons and glyphs** so your terminal, Powerlevel10k, Starship, or other prompt looks 🔥.
 
-We use a patched version by opeik https://github.com/opeik here.
+Original release: [Nerd Fonts v3.4.0](https://github.com/ryanoasis/nerd-fonts/releases/latest)
+Main repo: [https://github.com/ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
-For more information have a look at the upstream website: https://github.com/andreberg/Meslo-Font
+---
 
-Version: 1.21
+## About Meslo LG
 
-## Which font?
+* Meslo LG is a **customized version of Apple’s Menlo-Regular**, itself based on Bitstream Vera Sans Mono.
+* This version is patched by [opeik](https://github.com/opeik) for Nerd Fonts icons.
+* Upstream: [Meslo-Font](https://github.com/andreberg/Meslo-Font)
 
-### TL;DR
+**Version:** 1.21
 
-* Pick your font family:
-  * If you are limited to monospaced fonts (because of your terminal, etc) then pick a font with `Nerd Font Mono` (or `NFM`).
-  * If you want to have bigger icons (usually around 1.5 normal letters wide) pick a font without `Mono` i.e. `Nerd Font` (or `NF`). Most terminals support this, but ymmv.
-  * If you work in a proportional context (GUI elements or edit a presentation etc) pick a font with `Nerd Font Propo` (or `NFP`).
+---
+
+## Which Font Should I Pick?
+
+### Quick TL;DR
+
+* **Monospaced terminal-friendly:** choose `Nerd Font Mono` (NFM)
+* **Bigger icons (\~1.5x letter width):** pick `Nerd Font` (NF)
+* **GUI/proportional contexts:** pick `Nerd Font Propo` (NFP)
 
 ### Ligatures
 
-Ligatures are generally preserved in the patched fonts.
-Nerd Fonts `v2.0.0` had no ligatures in the `Nerd Font Mono` fonts, this has been dropped with `v2.1.0`.
-If you have a ligature-aware terminal and don't want ligatures you can (usually) disable them in the terminal settings.
+* Ligatures are preserved in patched fonts (v2.1.0+).
+* If your terminal supports ligatures and you don’t want them, disable them in your terminal settings.
 
-### Explanation
+---
 
-Once you narrow down your font choice of family (`Droid Sans`, `Inconsolata`, etc) and style (`bold`, `italic`, etc) you have 2 main choices:
+## How to Install Fonts (User-Wide)
 
-#### `Option 1: Download already patched font`
+We’ve made this **easy-peasy** 😎 with `install.sh` — just drop it in the same folder as the `.ttf` files and run:
 
- * For a stable version download a font package from the [release page](https://github.com/ryanoasis/nerd-fonts/releases)
- * Or download the development version from the folders here
+```bash
+chmod +x install.sh
+./install.sh
+```
 
-#### `Option 2: Patch your own font`
+This script will:
 
- * Patch your own variations with the various options provided by the font patcher (i.e. not include all symbols for smaller font size)
+1. Copy all `.ttf` files into your personal font folder: `~/.local/share/fonts`
+2. Refresh your font cache automatically (`fc-cache -fv`)
+3. Make Meslo Nerd Font available to your terminal or GUI apps
 
-For more information see: [The FAQ](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#which-font)
+**Optional:** if you want system-wide installs, move the `.ttf` files into `/usr/share/fonts/` with `sudo`, then refresh the cache.
 
-[SIL-RFN]:http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web_fonts_and_RFNs#14cbfd4a
+---
+
+### How to Use in Your Terminal
+
+1. Open your terminal → Preferences → Profile → Text → Custom Font
+2. Pick `MesloLGS NF` as the font family
+3. Restart the terminal for Starship / Powerlevel10k icons to show correctly
+
+---
+
+## Advanced Notes
+
+### Option 1 – Download Already Patched
+
+* Grab the latest release from [Nerd Fonts Releases](https://github.com/ryanoasis/nerd-fonts/releases)
+
+### Option 2 – Patch Your Own
+
+* Use the Nerd Fonts patcher for custom symbol sets or smaller sizes
+
+FAQ & Troubleshooting: [Nerd Fonts Wiki](https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#which-font)
+
+---
+
+## License
+
+* [SIL Reserved Font Name (RFN)](http://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web_fonts_and_RFNs#14cbfd4a)
 
