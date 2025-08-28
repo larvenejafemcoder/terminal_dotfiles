@@ -45,4 +45,6 @@ else
   echo "⚠️ Starship not found in PATH!"
 fi
 
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+
 echo "🎉 Done! Starship is now active in this session."
